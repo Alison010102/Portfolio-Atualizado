@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alison Alves Vieira Cruz | Full Stack Developer</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">A<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#services" data-i18n="nav-services">Services</a>
+                <a href="#works" data-i18n="nav-works">Works</a>
+                <a href="#resume" data-i18n="nav-resume">Resume</a>
+                <a href="#skills" data-i18n="nav-skills">Skills</a>
+                <a href="#testimonials" data-i18n="nav-testimonials">Testimonials</a>
+                <a href="#contact" data-i18n="nav-contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <div class="language-toggle">
+                    <button id="lang-btn" class="lang-btn">
+                        <span class="current-lang">EN</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown">
+                        <div class="lang-option" data-lang="en">English</div>
+                        <div class="lang-option" data-lang="pt">Português</div>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary" data-i18n="btn-hire">Hire Me!</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-subtitle" data-i18n="hero-greeting">I am Alison Alves Vieira Cruz</span>
+                    <h1 class="hero-title" data-i18n="hero-title">Full Stack Developer</h1>
+                    <p class="hero-description" data-i18n="hero-desc">
+                        My name is Alison, I'm 23 years old and I'm from Fortaleza/Ce. I'm currently studying Computer
+                        Science at Estácio. I'm fascinated by technology and programming, and I share my knowledge on
+                        LinkedIn 'Alison Alves' and here on GitHub 'alison010102'.
+                    </p>
+
+                    <div class="hero-btns">
+                        <a href="./images/curriculo.pdf" target="_blank" class="btn btn-outline"
+                            data-i18n="btn-download">Download CV <i class="fa-solid fa-download"></i></a>
+                        <div class="social-links">
+                            <a href="https://github.com/alison010102" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/alison-alves-6a8382330/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label" data-i18n="stat-exp">Years of<br>Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label" data-i18n="stat-projects">Project<br>Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-i18n="stat-clients">Happy<br>Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0</span>
+                            <span class="stat-label" data-i18n="stat-awards">Years of<br>Win Awards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="img-wrapper">
+                        <img src="./images/eu.jpeg" alt="Alison Alves Vieira Cruz" id="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="services-title">My Technical Services</h2>
+                    <p class="section-desc" data-i18n="services-desc">I build robust and scalable solutions tailored to
+                        your needs.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-item active">
+                        <div class="service-index">01</div>
+                        <h3 class="service-name" data-i18n="svc-frontend">Frontend Dev</h3>
+                        <p class="service-text" data-i18n="svc-frontend-desc">Creating responsive and interactive user
+                            interfaces using modern frameworks.</p>
+                        <i class="fa-solid fa-code service-icon"></i>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-index">02</div>
+                        <h3 class="service-name" data-i18n="svc-backend">Backend Dev</h3>
+                        <p class="service-text" data-i18n="svc-backend-desc">Building secure and efficient server-side
+                            logic and databases.</p>
+                        <i class="fa-solid fa-server service-icon"></i>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-index">03</div>
+                        <h3 class="service-name" data-i18n="svc-mobile">Mobile Dev</h3>
+                        <p class="service-text" data-i18n="svc-mobile-desc">Developing cross-platform mobile
+                            applications with React Native.</p>
+                        <i class="fa-solid fa-mobile-screen service-icon"></i>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-index">04</div>
+                        <h3 class="service-name" data-i18n="svc-fullstack">Full Stack</h3>
+                        <p class="service-text" data-i18n="svc-fullstack-desc">End-to-end development integrating
+                            frontend and backend seamlessly.</p>
+                        <i class="fa-solid fa-layer-group service-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Works Section -->
+        <section id="works" class="section works">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="works-title">My Recent Works</h2>
+                </div>
+
+                <div class="works-filter">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
+                    <button class="filter-btn" data-filter="mobile" data-i18n="filter-mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="filter-web">Web</button>
+                </div>
+
+                <div class="works-grid">
+                    <!-- Project 1: Zylomax -->
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-img">
+                            <img src="./images/academia.jpeg" alt="Zylomax Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-1-title">Zylomax</h3>
+                            <p data-i18n="work-1-desc">React Native / Expo</p>
+                            <a href="https://github.com/Alison010102/App_ZyloMax" target="_blank" class="btn-icon"><i
+                                    class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 2: App CheckPoint -->
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-img">
+                            <img src="./images/app-metas.jpeg" alt="App CheckPoint Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-2-title">App CheckPoint</h3>
+                            <p data-i18n="work-2-desc">React Native / Expo</p>
+                            <a href="https://github.com/Alison010102/App_CheckPoint" target="_blank" class="btn-icon"><i
+                                    class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 3: Branco Motos -->
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-img">
+                            <img src="./images/armazen.jpeg" alt="Branco Motos Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-3-title">Branco Motos</h3>
+                            <p data-i18n="work-3-desc">React Native / Expo</p>
+                            <a href="https://github.com/Alison010102/App_Branco_Motos" target="_blank"
+                                class="btn-icon"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 4: TicketFly -->
+                    <div class="work-item" data-category="mobile">
+                        <div class="work-img">
+                            <img src="./images/embarque.jpg" alt="TicketFly Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-4-title">TicketFly</h3>
+                            <p data-i18n="work-4-desc">React Native / Expo</p>
+                            <a href="https://github.com/Alison010102/App_FlightTicket" target="_blank"
+                                class="btn-icon"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 5: Gerador Certificado -->
+                    <div class="work-item" data-category="web">
+                        <div class="work-img">
+                            <img src="./images/gerador.jpg" alt="Gerador Certificado Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-5-title">Gerador Certificado</h3>
+                            <p data-i18n="work-5-desc">Angular</p>
+                            <a href="https://github.com/Alison010102/Gerador-certificado" target="_blank"
+                                class="btn-icon"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 6: Senha -->
+                    <div class="work-item" data-category="web">
+                        <div class="work-img">
+                            <img src="./images/senha.jpg" alt="Senha Project">
+                        </div>
+                        <div class="work-overlay">
+                            <h3 data-i18n="work-6-title">Senha</h3>
+                            <p data-i18n="work-6-desc">HTML / CSS / JS</p>
+                            <a href="#" class="btn-icon"><i class="fa-solid fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="section resume">
+            <div class="container">
+                <div class="resume-grid">
+                    <!-- Experience -->
+                    <div class="resume-column">
+                        <h3 class="resume-title" data-i18n="exp-title"><i class="fa-solid fa-briefcase"></i> My
+                            Experience</h3>
+
+                        <div class="resume-item">
+                            <span class="resume-date">2025 - 2026</span>
+                            <h4 class="resume-role" data-i18n="exp-1-role">IT Intern</h4>
+                            <p class="resume-company">Fácil Serviços</p>
+                            <p class="resume-desc" data-i18n="exp-1-desc">Computer maintenance, GLPI management, and
+                                ticket handling.</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <span class="resume-date">2024 - Present</span>
+                            <h4 class="resume-role" data-i18n="exp-2-role">Freelance Full Stack Dev</h4>
+                            <p class="resume-company">Remote</p>
+                            <p class="resume-desc" data-i18n="exp-2-desc">Developed Zylomax (AI Gym App) and an
+                                accessibility app for the elderly (Health/Safety).</p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="resume-column">
+                        <h3 class="resume-title" data-i18n="edu-title"><i class="fa-solid fa-graduation-cap"></i> My
+                            Education</h3>
+
+                        <div class="resume-item">
+                            <span class="resume-date">2024 - 2027</span>
+                            <h4 class="resume-role" data-i18n="edu-1-role">Computer Science</h4>
+                            <p class="resume-company">Estácio</p>
+                        </div>
+
+                        <div class="resume-item">
+                            <span class="resume-date">2024 - 2025</span>
+                            <h4 class="resume-role" data-i18n="edu-2-role">Full Stack Development</h4>
+                            <p class="resume-company">Rocketseat</p>
+                            <p class="resume-desc" data-i18n="edu-2-desc">Node.js, React Native, Angular, Databases.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="skills-title">My Skills</h2>
+                    <p class="section-desc" data-i18n="skills-desc">We put your ideas and thus your wishes in the form
+                        of a unique web project that inspires you and you customers.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Row 1 -->
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <span class="skill-percent">95%</span>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <span class="skill-percent">95%</span>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <span class="skill-percent">90%</span>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                        <span class="skill-percent">90%</span>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
+                        <span class="skill-percent">90%</span>
+                        <span class="skill-name">React Native</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-node-js"></i></div>
+                        <span class="skill-percent">85%</span>
+                        <span class="skill-name">Node.js</span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-angular"></i></div>
+                        <span class="skill-percent">80%</span>
+                        <span class="skill-name">Angular</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-bootstrap"></i></div>
+                        <span class="skill-percent">85%</span>
+                        <span class="skill-name">Bootstrap</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <span class="skill-percent">90%</span>
+                        <span class="skill-name">Git</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <span class="skill-percent">50%</span>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-solid fa-c"></i></div>
+                        <span class="skill-percent">75%</span>
+                        <span class="skill-name">C++</span>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon"><i class="fa-solid fa-file-code"></i></div>
+                        <span class="skill-percent">85%</span>
+                        <span class="skill-name">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Stories Section -->
+        <section id="testimonials" class="section testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-i18n="stories-title">My Client's Stories</h2>
+                    <p class="section-desc" data-i18n="stories-desc">Empowering people in new a digital journey with my
+                        super services.</p>
+                </div>
+
+                <div class="stories-grid">
+                    <div class="story-item">
+                        <div class="story-header">
+                            <div class="story-img">//insira a imagem</div>
+                            <div class="story-info">
+                                <h4>Tim Hardy</h4>
+                                <p>Google</p>
+                            </div>
+                            <div class="story-icon"><i class="fa-brands fa-google"></i></div>
+                        </div>
+                        <p class="story-text" data-i18n="story-1">"Tim is a creative nerd! He has extensive experience
+                            in web design and development. I highly recommend him."</p>
+                    </div>
+
+                    <div class="story-item">
+                        <div class="story-header">
+                            <div class="story-img">//insira a imagem</div>
+                            <div class="story-info">
+                                <h4>Ryan Cruz</h4>
+                                <p>Adobe</p>
+                            </div>
+                            <div class="story-icon"><i class="fa-brands fa-adobe"></i></div>
+                        </div>
+                        <p class="story-text" data-i18n="story-2">"Great work! Efficient, professional and very
+                            creative. The final result exceeded our expectations."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact-title">Let's work together!</h2>
+                        <p data-i18n="contact-desc">I design and code beautifully simple things, and I love what I do.
+                            Just simple like that!</p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+55 85 98737-0575</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>alysonalves523@gmail.com</span>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Fortaleza, Ceará, Brazil</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="mailto:alysonalves523@gmail.com" method="post"
+                        enctype="text/plain">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" class="form-control">
+                            <input type="text" name="subject" placeholder="Subject" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" class="form-control">
+                            <input type="tel" name="phone" placeholder="Phone Number" class="form-control">
+                        </div>
+                        <textarea name="message" placeholder="Message" class="form-control" rows="5"></textarea>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn-send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo">G<span>.</span></a>
+                <div class="footer-links">
+                    <a href="#services" data-i18n="nav-services">Services</a>
+                    <a href="#works" data-i18n="nav-works">Works</a>
+                    <a href="#resume" data-i18n="nav-resume">Resume</a>
+                    <a href="#skills" data-i18n="nav-skills">Skills</a>
+                    <a href="#contact" data-i18n="nav-contact">Contact</a>
+                </div>
+                <p class="copyright">© 2025 Alison Alves Vieira Cruz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
