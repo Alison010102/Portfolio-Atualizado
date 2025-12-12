@@ -124,26 +124,21 @@ const translations = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Language Toggle logic
     const langBtn = document.getElementById('lang-btn');
     const currentLangSpan = document.querySelector('.current-lang');
     const langOptions = document.querySelectorAll('.lang-option');
 
-    let currentLang = 'en'; // Default language
+    let currentLang = 'en';
 
     function updateLanguage(lang) {
         currentLang = lang;
         currentLangSpan.textContent = lang.toUpperCase();
 
-        // Update all translatable elements
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
             if (translations[lang][key]) {
-                // Check if it's a button with nested icon
                 if (element.querySelector('i')) {
                     const iconHTML = element.querySelector('i').outerHTML;
-                    // Replace content but keep the icon based on our dict which includes HTML for buttons often
-                    // Or simpler: The translation string contains the icon HTML already for btn-download
                     element.innerHTML = translations[lang][key];
                 } else {
                     element.innerHTML = translations[lang][key];
@@ -159,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Animation
     const sections = document.querySelectorAll('.section');
 
     const observerOptions = {
@@ -178,15 +172,12 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Work Filter Logic
     const filterBtns = document.querySelectorAll('.filter-btn');
     const workItems = document.querySelectorAll('.work-item');
 
     filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Remove active class from all buttons
             filterBtns.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             btn.classList.add('active');
 
             const filterValue = btn.getAttribute('data-filter');
@@ -194,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
             workItems.forEach(item => {
                 if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
                     item.style.display = 'block';
-                    // Re-trigger animation if needed or just show
                     setTimeout(() => {
                         item.style.opacity = '1';
                         item.style.transform = 'translateY(0)';

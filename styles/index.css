@@ -2,9 +2,7 @@
     --primary-bg: #050505;
     --secondary-bg: #101010;
     --card-bg: #141414;
-    /* Slightly lighter for cards */
     --accent-color: #2ecc71;
-    /* Emerald Green */
     --accent-hover: #27ae60;
     --text-primary: #ffffff;
     --text-secondary: #a0a0a0;
@@ -48,7 +46,6 @@ img {
     display: block;
 }
 
-/* Utilities */
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
@@ -93,7 +90,6 @@ img {
     background: rgba(46, 204, 113, 0.1);
 }
 
-/* Sections Global */
 .section {
     padding: 100px 0;
     opacity: 0;
@@ -127,7 +123,6 @@ img {
     font-size: 16px;
 }
 
-/* Header */
 .header {
     height: var(--header-height);
     display: flex;
@@ -199,7 +194,6 @@ img {
     gap: 20px;
 }
 
-/* Language Toggle */
 .language-toggle {
     position: relative;
 }
@@ -260,7 +254,6 @@ img {
     color: var(--text-primary);
 }
 
-/* Hero Section */
 .hero {
     padding-top: calc(var(--header-height) + 80px);
     padding-bottom: 100px;
@@ -365,7 +358,6 @@ img {
     color: var(--text-secondary);
 }
 
-/* Hero Image */
 .hero-image {
     flex: 1;
     display: flex;
@@ -430,7 +422,6 @@ img {
     border-radius: 20px;
 }
 
-/* Services */
 .services-grid {
     display: flex;
     flex-direction: column;
@@ -491,7 +482,6 @@ img {
     transform: rotate(0);
 }
 
-/* Works */
 .works-filter {
     display: flex;
     justify-content: center;
@@ -587,7 +577,6 @@ img {
     margin-left: auto;
 }
 
-/* Resume */
 .resume-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -637,7 +626,6 @@ img {
     font-size: 14px;
 }
 
-/* Skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -685,7 +673,6 @@ img {
     color: var(--text-secondary);
 }
 
-/* Stories / Testimonials */
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -748,7 +735,6 @@ img {
     line-height: 1.6;
 }
 
-/* Contact */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
@@ -825,7 +811,6 @@ img {
     background: #222;
 }
 
-/* Footer */
 .footer {
     padding: 50px 0;
     border-top: 1px solid var(--border-color);
@@ -861,7 +846,6 @@ img {
     font-size: 14px;
 }
 
-/* Media Queries */
 @media (max-width: 992px) {
     .container {
         padding: 0 30px;
